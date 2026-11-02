@@ -1349,13 +1349,16 @@ section {
   z-index: 1;
 }
 
-/* MOBILE NAVIGATION FIX */
+/* MOBILE NAVIGATION AND HEADER SPACING */
 @media (max-width: 768px) {
   .site-header {
-    height: auto;
-    padding: 10px 12px;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 4px 12px !important;
+    margin: 0 !important;
     flex-direction: column;
     align-items: stretch;
+    justify-content: center;
   }
 
   .site-header .nav-links {
@@ -1367,7 +1370,8 @@ section {
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
-    padding: 5px 0 10px;
+    padding: 4px 0 !important;
+    margin: 0 !important;
     scrollbar-width: none;
   }
 
@@ -1381,10 +1385,10 @@ section {
   }
 
   body {
-    padding-top: 85px;
+    padding-top: 65px !important;
   }
 
   section {
-    scroll-margin-top: 95px;
+    scroll-margin-top: 75px;
   }
 }
